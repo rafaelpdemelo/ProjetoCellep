@@ -137,7 +137,7 @@ header {
   text-align: center;
   align-items: center;
   margin: auto;
-  width: 100%;
+  width: 25%;
 }
 
 .card {
@@ -145,7 +145,7 @@ header {
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
-  color: var(--dark-blue);
+  color: #363f5f;
 }
 
 .card h3 {
@@ -157,6 +157,14 @@ header {
   justify-content: space-between;
 }
 
+.card #ny {
+}
+
+.card #arg {
+}
+
+.card #din {
+}
 .card p {
   font-size: 2rem;
   line-height: 3rem;
