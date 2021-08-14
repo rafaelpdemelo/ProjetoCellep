@@ -20,7 +20,9 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#artist">Artist</a></li>
         <li><a href="#tour">Tour</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a onclick="Modal.open();" href="#">Contact</a>
+        </li>
       </ul>
       <div id="search">
         <i data-feather="search"></i>
@@ -32,6 +34,7 @@
         <div class="title">
           <h1>EMINEM</h1>
           <a href="#">
+            <span>Our Instagram</span>
             <i data-feather="instagram"></i>
           </a>
         </div>
@@ -432,7 +435,32 @@
         </div>
       </section>
     </main>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div id="info">
+          <h2 id="infoo">Info</h2>
+          <i data-feather="map-pin"></i>
+          <h2>Chicago, US</h2>
+          <i data-feather="phone"></i>
+          <h2>+00 151515</h2>
+          <i data-feather="mail"></i>
+          <h2>eminem@gmail.com</h2>
+        </div>
+      </div>
+    </div>
+
     <script src="./main.js"></script>
+    <script>
+      const Modal = {
+        open() {
+          document.querySelector('.modal-overlay').classList.add('active')
+        },
+        close() {
+          document.querySelector('.modal-overlay').classList.remove('active')
+        }
+      }
+    </script>
     <script>
       feather.replace()
     </script>
