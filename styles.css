@@ -48,9 +48,18 @@ header {
 }
 
 .title a {
-  right: 300px;
-  top: 90px;
-  position: absolute;
+  font-weight: 800;
+  color: #5e1fb1;
+  text-decoration: none;
+  right: -200px;
+  top: -295px;
+  position: relative;
+}
+
+.title span {
+  position: relative;
+  right: 10px;
+  font-size: 20px;
 }
 
 /* IMAGENS PRINCIPAIS ========================*/
@@ -168,10 +177,6 @@ button {
   cursor: pointer;
 }
 
-a:hover {
-  color: #1dd705;
-}
-
 button:hover {
   background: black;
 }
@@ -220,4 +225,53 @@ input[type='submit']:hover {
   right: 900px;
   top: 1655px;
   position: absolute;
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+}
+
+.modal {
+  background: #f0f2f5;
+  padding: 2.4rem;
+  border-radius: 0.2rem;
+}
+
+.modal #info {
+  display: inline-block;
+}
+
+.modal #infoo {
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
