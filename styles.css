@@ -1,0 +1,223 @@
+/* GLOBAL ============*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* HEADER ================*/
+header {
+  z-index: 1;
+  background: #000000;
+}
+
+.listaHeader {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+}
+
+.listaHeader a {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  color: white;
+}
+
+#search {
+  position: absolute;
+  display: flex;
+  right: 10px;
+  top: 10px;
+  color: white;
+}
+
+/*  TITLE ==================== */
+
+.title {
+  bottom: 300px;
+  right: 700px;
+  font-size: 100px;
+  color: white;
+  z-index: 100;
+  position: absolute;
+}
+
+.title a {
+  right: 300px;
+  top: 90px;
+  position: absolute;
+}
+
+/* IMAGENS PRINCIPAIS ========================*/
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides img {
+  width: 100%;
+}
+
+.mySlides fade {
+  display: none;
+}
+
+/* ANIMAÇÃO DO FADE ======================*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* SEÇÃO SOBRE EMINEM ================================= */
+
+#artist {
+  top: 990px;
+  width: 100%;
+  position: absolute;
+  background: black;
+}
+
+.container1 {
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.container1 lorem {
+  padding: 10px;
+  width: 10%;
+  display: inline-block;
+}
+
+.container1 img {
+  border-radius: 110px;
+  width: 210px;
+  height: 210px;
+}
+
+/* TOUR ================= */
+
+.container2 {
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  color: var(--dark-blue);
+}
+
+.card h3 {
+  font-weight: normal;
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card p {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+
+  color: rgb(22, 241, 14);
+  background: var(--green);
+
+  padding: 0;
+
+  border-radius: 0.25rem;
+
+  cursor: pointer;
+}
+
+a:hover {
+  color: #1dd705;
+}
+
+button:hover {
+  background: black;
+}
+
+.button.new {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type='submit'] {
+  position: absolute;
+  left: 950px;
+  bottom: -1250px;
+  background-color: #04aa6d;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.container h3 {
+  right: 900px;
+  top: 1655px;
+  position: absolute;
+}
